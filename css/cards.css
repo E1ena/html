@@ -1,0 +1,112 @@
+.cards .conteiner {
+    margin: 0 auto;
+    padding: 7.5rem 0.5rem 5rem 0.5rem;
+}
+@media only screen and (max-width: 47.9375em) { /*<767px*/
+    .cards .conteiner {
+        padding: 2rem 0 0 0;
+    }
+}
+
+.cards__postSlock {
+    padding: 0 1rem 2.5rem 0;
+}
+@media only screen and (max-width: 47.9375em) { /*<767px*/
+    .cards__postSlock {
+        height: 18rem;
+    }
+}
+
+.post {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+}
+
+.post img {
+    width: 100%;
+    height: inherit;
+}
+@media only screen and (max-width: 47.9375em) { /*<767px*/
+    .post img {
+        width: 100%;
+        height: 18rem;
+    }
+}
+@media only screen and (min-width: 48em) and (max-width: 59.9375em) { /*768-959px*/
+    .post img {
+        width: 100%;
+        min-height: 17rem;
+    }
+}
+@media only screen and (min-width: 60em) and (max-width: 77em) { /*960px*/
+    .post img {
+        width: 100%;
+        min-height: 15rem;
+    }
+}
+
+.post .caption {
+    padding: 1rem;
+}
+.post .caption h4 {
+    font-size: 2.4rem;
+    font-weight: bold;
+    padding-bottom: 1.5rem;
+}
+.post .caption:after {
+    content:" ";
+    background-image: url('../img/post.png');
+    background-repeat: no-repeat;
+    width: 3rem;
+    height: 3rem;
+    position: absolute; 
+    top: 1rem;
+    right: 1rem;
+
+}
+.post .caption p {
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+}
+
+.post .caption {
+    position: absolute;
+    top: 11rem;
+    left: 0px;
+    background: rgba(115,166,204,0.75);
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    transition: all 0.3s cubic-bezier(0.4, 0, 1, 1) 0s; 
+}
+
+.post:hover .caption {
+    top: 0px;
+}
+
+@media only screen and (max-width: 47.9375em) { /*<767px*/
+    .post .caption {
+         top: 0;
+    }
+}
+@media only screen and (min-width: 48em) and (max-width: 59.9375em) { /*768-959px*/
+    .post .caption {
+        top: 70%;
+    }
+}
+@media only screen and (min-width: 60em) and (max-width: 77em) { /*960px*/
+    .post .caption {
+        top: 75%;
+    }
+    .post .caption h4 {
+        font-size: 2rem;
+        padding-bottom: 1rem;
+    }
+}
+@media only screen and (min-width:77.0625em) { /*1200px*/
+    .post .caption {
+        top: 11rem;
+    }
+}

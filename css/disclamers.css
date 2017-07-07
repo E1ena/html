@@ -1,0 +1,19 @@
+.disclamers .conteiner {
+    margin: 0 auto;
+    padding: 2rem 0.5rem;
+}
+@media only screen and (max-width: 47.9375em) { /*<767px*/
+    .disclamers .conteiner {
+        padding: 2rem 0 0 0;
+    }
+}
+.disclamers_text {
+     border-left: 0.5rem solid #4488bb;
+     padding: 1.5rem 2.5rem;
+}
+.disclamers p{
+    color: #4488bb;
+    font-size: 1.8rem;
+    line-height: 2rem;
+    margin-bottom: 2rem;
+}
